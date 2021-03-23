@@ -438,6 +438,110 @@
 // var total_snacks = (estimated - current_age) * snacks_amount;
 // document.write("You will need " + " " + total_snacks + " " + snack + " " + "to last you until the ripe old age of"+ " " + estimated)
 
+// CHAPTER # 6 - 9
+
+// 1. Write a program to take a number in a variable, do the
+// required arithmetic to display the following result in your
+// browser:
+
+// var a = 10;
+// document.write("Value of a is : " + " " + a + "<br>")
+
+// var b = ++a;
+// document.write("Value of ++a is :" + " " + b  + "<br>" )
+// document.write("Now the value of a is : " + " " + b + "<br>" )
+
+// var c = a++;
+// document.write("Value of a++ is :" + " " + c + "<br>")
+// document.write("Now value of a is :" + " " + a + "<br>")
+
+// var e = --a;
+// document.write("Value of --a is :" + " " + e + "<br>")
+// document.write("Now value of a is :" + " " + e + "<br>")
+
+// var f = a--;
+// document.write("Value of a-- is :" + " " + f + "<br>")
+// document.write("Now value of a is :" + " " + a + "<br>")
+
+// 2. What will be the output in variables a, b & result after
+// execution of the following script:
+// var a = 2, b = 1;
+// var result = --a - --b + ++b + b--;
+// Explain the output at each stage:
+// --a;
+// --a - --b;
+// --a - --b + ++b;
+// --a - --b + ++b + b--;
+
+// var a = 2;
+// var b = 1;
+// var result = --a - --b + ++b + b--;
+// document.write("a is :" +  " " + a + "<br>")
+// document.write("b is : " + " " + b + "<br>")
+// document.write("Results is :" + " " + result)
+
+// Output
+// --a = 1
+// --a - --b = 0 
+// --a - --b + ++b = 0
+// --a - --b + ++b + b-- = -1
+
+// 3. Write a program that takes input a name from user & 
+// greet the user.
+
+// var user = prompt("Enter your name...")
+// alert("Welcome" + " " + user)
+
+// 5. Write a program to take input a number from user & 
+// display it’s multiplication table on your browser. If user 
+// does not enter a new number, multiplication table of 5 
+// should be displayed by default.
+
+//  var number = +prompt('Enter an integer: ');
+//  if(number = number){
+//   for(let i = 1; i <= 10; i++) {
+//     const result = i * number + "<br>";
+//     document.write(number + " " +  "*" + " " + i + " " + "=" + " " + result);
+//   }
+//  }
+//  else  {
+//   for(let i = 1; i <= 10; i++) {
+//     const result = i * 5 + "<br>";
+//     document.write(number + " " +  "*" + " " + i + " " + "=" + " " + result);
+//   }  
+//  }
+ 
+// 6. Take
+// a) Take three subjects name from user and store them in 3 
+// different variables.
+// b) Total marks for each subject is 100, store it in another 
+// variable.
+// c) Take obtained marks for first subject from user and 
+// stored it in different variable.
+// Page 3 of 3
+// d) Take obtained marks for remaining 2 subjects from user 
+// and store them in variables.
+// e) Now calculate total marks and percentage and show the 
+// result in browser like this.(Hint: user table)
+
+// document.write("<b>Subject</b>" + " " + "<b>Total Marks</b>" + " " + "<b>Obtained Marks</b>"  +" " + "<b>Percentage</b>" + "<br>")
+
+// var subject1 = prompt("Enter subject one")
+// var subject2 = prompt("Enter subject two")
+// var subject3 = prompt("Enter subject three")
+
+// var marks1 = +prompt("Enter marks of subject 1")
+// var marks2 = +prompt("Enter marks of subject 2")
+// var marks3 = +prompt("Enter marks of subject 3")
+
+// document.write("<td> " + subject1 + "  " + " " + "100" + " " + " " + marks1 + " " + " " + marks1+"%" + "<br>" + "</td>")
+// document.write(subject2 + "  " + " " + "100" + " " + " " + marks2 + " " + " " + marks2+"%" + "<br>")
+// document.write(subject3 + " " + " " + "100" + " " + " " + marks3 + " " + " " + marks3+"%" + "<br>")
+
+
+
+
+
 // CHAPTER # 9-11
 
 // 1. Write a program to take “city” name as input from user. If 
@@ -468,19 +572,362 @@
 //   alert("Good Morning" + " " +  gender)
 // }
 
-// 3. Write a program to take input color of road traffic signal 
-// from the user & show the message according to this table:
+// 3. Write a program to take input color of road traffic signal from the user & show the message according to this table:
 
-var color = prompt("Enter color of traffic road signal...")
-if (color == "red"){
-  alert("Must Stop")
-}
-else if (color == "yellow"){
-  alert("Ready To Move")
-}
-else if (color == "green"){
-  alert("Move Now")
-}
-else {
-  alert("Please check the color carefully")
-}
+// var color = prompt("Enter color of traffic road signal...")
+// if (color == "red"){
+//   alert("Must Stop")
+// }
+// else if (color == "yellow"){
+//   alert("Ready To Move")
+// }
+// else if (color == "green"){
+//   alert("Move Now")
+// }
+// else {
+//   alert("Please check the color carefully")
+// }
+
+// 4. Write a program to take input remaining fuel in car (in 
+//   litres) from user. If the current fuel is less than 0.25litres, 
+//   show the message “Please refill the fuel in your car”
+
+// var petrol = +prompt("Enter remaining fuel in your car...")
+// if (petrol <= 0.25){
+//   alert("Please refill the fuel in your car")
+// }
+// else {
+//   alert("Enjoy your driving!")
+// }
+
+// 5. Run this script, & check whether alert message would be
+// displayed or not. Record the outputs.
+
+// var a = 4;
+// if (++a === 5){
+// alert("given condition for variable a is true");
+// }
+
+// output : true
+
+
+// var b = 82;
+// if (b++ === 83){
+//   alert("given condition for variable a is true");
+// }
+
+// output : none
+
+// var c = 12;
+// if (c++ === 13){
+// alert("condition 1 is true");
+// }
+// if (c === 13){
+// alert("condition 2 is true");
+// }
+// if (++c < 14){
+// alert("condition 3 is true");
+// }
+// if(c === 14){
+// alert("condition 4 is true");
+// }
+
+// output : condition 4 is true
+
+// var materialCost = 20000;
+// var laborCost = 2000;
+// var totalCost = materialCost + laborCost;
+// if (totalCost === laborCost + materialCost){
+// alert("The cost equals");
+// }
+
+// output : The cost equals
+
+// if (true){
+//   alert("True");
+//   }
+//  if (false){
+//   alert("False");
+//   }
+
+// output : true
+
+// if("car" < "cat"){
+//   alert("car is smaller than cat");
+//   }
+
+// output : car is smaller than cat  
+
+// 9. Write a program that checks whether the given input is an
+// even number or an odd number.
+
+// var number_input = +prompt("Enter any number...")
+// if(number_input % 2 === 0 ){
+//   alert("The given number is an even number!")
+// }
+// else{
+//   alert("The given number is an odd number!")
+// }
+
+//CHAPTER # 12-13
+
+// 1. Write a program that takes a character (number or string) 
+// in a variable & checks whether the given input is a 
+// number, uppercase letter or lower case letter. (Hint: ASCII 
+// codes:- A=65, Z=90, a=97, z=122).
+
+// var ch = prompt("Enter any character...")
+	
+// if (ch>=65 && ch<=90)
+// alert("Character is a capital letter");
+// else if (ch>=97 && ch<=122)
+// alert("Character is a small letter");
+// else if (ch>=48 && ch<=57)
+// alert("Character is a digit");
+// else if ((ch>0 && ch<=47)||(ch>=58 && ch<=64)|| (ch>=91 && ch<=96)||(ch>=123 && ch<=127))
+// alert("Character is a special symbol");
+
+// 2. Write a JavaScript program that accept two integers and
+// display the larger. Also show if the two integers are equal.
+
+// var integar1 = +prompt("Enter an integar...")
+// var integar2 = +prompt("Enter another integar...")
+
+// if(integar1 > integar2){
+//   alert(integar1 + " " + "is greater than" + " " + integar2)
+// }
+// else if(integar1 < integar2){
+//   alert(integar2 + " " + "is greater than" + " " + integar1)
+// }
+// else{
+//   alert(integar1 + " " + "is equals to" + " " + integar2)
+// }
+
+// 3. Write a program that takes input a number from user & 
+// state whether the number is positive, negative or zero.
+
+// var number = +prompt("Enter a number...");
+
+// if(number > 0) {
+//   alert("Tne number is positive")
+// }
+// else if (number < 0){
+//   alert("The number is negative")
+// }
+// else {
+//   alert("The number is zero")
+// }
+
+// 4. Write a program that takes a character (i.e. string of 
+//   length 1) and returns true if it is a vowel, false otherwise
+
+// var character = prompt("Enter a single character...")
+// var vowel = ["a","i","o","u","e"]
+
+// if (character = vowel){
+//   alert("True it is a vowel...")
+// }
+// else{
+//   alert("False it's not a vowel")
+// }
+
+// 5. Write a program that
+// a. Store correct password in a JS variable.
+// b. Asks user to enter his/her password
+// c. Validate the two passwords:
+// i. Check if user has entered password. If not, then 
+// give message “ Please enter your password”
+// ii. Check if both passwords are same. If they are 
+// same, show message “Correct! The password you 
+// entered matches the original password”. Show 
+// “Incorrect password” otherwise.
+
+// var password = "pawrihorahi"
+// var user_password = prompt("Enter password...")
+
+// if(user_password == password){
+//   alert("Correct! The password you entered matches the original password")
+// }
+// else if (user_password != password){
+//   alert("Incorrect password")
+// }
+// else if(user_password  = "") {
+// alert("Please enter your password")
+// }
+
+// 6. This if/else statement does not work. Try to fix it:
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+// greeting = "Good day";
+// else
+// greeting = "Good evening";
+// }
+
+// var greeting;
+// var hour = 13;
+// if (hour <= 18) {
+//   alert("Good Morning")
+// }
+// else{
+//   alert("Good Evening")
+// }
+
+// 7. Write a program that takes time as input from user in 24 
+// hours clock format like: 1900 = 7pm. Implement the 
+// following case using if, else & else if statements
+
+
+
+
+
+
+  
+
+// CHAPTER # 14 - 16
+
+// 1. Declare an empty array using JS literal notation to store
+// student names in future.
+
+// var arr = [];
+
+// 2.Declare an empty array using JS object notation to store
+// student names in future.
+
+// var arr = new Array ();
+
+// 3. Declare and initialize a strings array.
+
+// var strings = ["Talha","Safa","Ahmed","Mustafa","Abdul Jabbar"];
+
+// 4. Declare and initialize a numbers array.
+
+// var numbers = [2,4,6,8,10];
+
+// 5. Declare and initialize a boolean array.
+
+// var boolean = [true,false,false,true,false];
+
+// 6. Declare and initialize a mixed array.
+
+// var mixed = [true,55,"hello",96,"yes",false];
+
+// 7. Declare and Initialize an array and store available
+// education qualifications in Pakistan (e.g. SSC, HSC, BCS,
+// BS, BCOM, MS, M. Phil., PhD). Show the listed
+// qualifications in your browser like:
+
+// document.write("Qualifications :" + "<br>" + "<br>")
+
+// var education = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"]
+
+// document.write("1)" + " " + education[0] + "<br>" + "2)" + " " + education[1] + "<br>" + "3)" + " " + education[2]
+// + "<br>" + "4)" + " " + education[3] + "<br>" + "5)" + " " + education[4] + "<br>" + "6)" + " " + education[5] + "<br>"
+// + "7)" + " " + education[6] + "<br>" + "8)" + " " + education[7] + "<br>" )
+
+// 8. Write a program to store 3 student names in an array.Take
+// another array to store score of these three students.
+// Assume that total marks are 500 for each student, display
+// the scores & percentages of students like:
+
+// var students_name = ["Talha","Amaan","Ali"]
+
+// var scores = [400,450,380]
+
+// var percentage1 = (scores[0] / 500 ) * 100
+
+// document.write("Score of " + "  " + students_name[0] +  " " + "is" + " " + scores[0] + " " + " Percentage "  + " " + percentage1  + " %." + "<br>" )
+
+
+// var percentage2 = (scores[1] / 500 ) * 100
+
+// document.write("Score of " + "  " + students_name[1] +  " " + "is" + " " + scores[1] + " " + " Percentage "  + " " + percentage2 + " %." +  "<br>")
+
+// var percentage3 = (scores[2] / 500 ) * 100
+
+// document.write("Score of " + "  " + students_name[2] +  " " + "is" + " " + scores[2] + " " + " Percentage "  + " " + percentage3 + " %." + "<br>")
+
+// 9. Initialize an array with color names. Display the array
+// elements in your browser.
+// a. Ask the user what color he/she wants to add to the
+// beginning & add that color to the beginning of the array.
+// Display the updated array in your browser.
+// b. Ask the user what color he/she wants to add to the end
+// & add that color to the end of the array. Display the
+// updated array in your browser.
+// c. Add two more color to the beginning of the array.
+// Display the updated array in your browser.
+// d. Delete the first color in the array. Display the updated
+// array in your browser.
+// e. Delete the last color in the array. Display the updated
+// array in your browser.
+// f. Ask the user at which index he/she wants to add a color
+// & color name. Then add the color to desired
+// position/index. . Display the updated array in your
+// browser.
+// g. Ask the user at which index he/she wants to delete
+// color(s) & how many colors he/she wants to delete. Then
+// remove the same number of color(s) from user-defined
+// position/index. . Display the updated array in your
+// browser.
+
+// var colors = ["red","blue","green","purple"]
+// document.write("Colors :" + " " + colors + "<br>")
+
+// var color1 = prompt("Enter a color to display at start")
+// colors.push(color1)
+// document.write("Updated colors :" + " " + colors + "<br>")
+
+// var color2 = [];
+// var color3 = prompt("Enter a color to display at end")
+// color2.push(color3)
+// var colors_mix = colors.concat(color2)
+// document.write("Updated colors :" + " " + colors_mix + "<br>")
+
+
+// var color4 = prompt("Enter two more colors");
+// colors.push(color4)
+// document.write("Updated colors :" + " "  + colors + "<br>")
+
+// var color = colors.pop()
+// document.write("Updated colors : " + " " + colors + "<br>")
+
+// var color_remove = colors.shift()
+// document.write("Updated colors : " + " " + colors + "<br>")
+
+// var color6 = prompt("Enter a color name :")
+// var position1 = +prompt("Enter the position at which you want to place :")
+// var postion2 = +prompt("Enter the number for conut")
+
+// var color7 = colors.splice(position1,postion2,color6)
+// document.write("Updated colors : " + " " + colors + "<br>")
+
+
+// 10. Write a program to store student scores in an array &
+// sort the array in ascending order using Array’s sort
+// method.
+
+// var score = [320,435,500,210,480]
+// document.write("Scores of students :" + " " + score + "<br>")
+// var order = score.sort()
+// document.write("Order of score :" + " " + order)
+
+// 11. Write a program to initialize an array with city names.
+// Copy 3 array elements from cities array to selectedCities
+// array.
+
+// var cities = ["Karachi","Islamabad","Peshawar","Multan","Lahore","Quetta"]
+// var selected_cities = cities.slice(1,4)
+// document.write("Cities :" + " " + cities + "<br>")
+// document.write("Selected cities :" + " " + selected_cities)
+
+// 12. Write a program to create a single string from the
+// below mentioned array:
+// var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+// (Use array’s join method)
+
+// var arr = ["This","is","my","cat"];
+// var arr2 = arr.join(" ")
+// document.write(arr + "<br>")
+// document.write(arr2)
+
